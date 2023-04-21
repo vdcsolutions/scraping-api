@@ -29,7 +29,7 @@ def get_from_api(api_url):
 
 def get_timestamp(data):
     try:
-        timestamp = data[0]['timestamp']
+        timestamp = data[0]['updated_at']
     except:
         logging.debug('There is no timestamp in downloaded json')
     return timestamp

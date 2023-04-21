@@ -1,39 +1,36 @@
-from proxy_list import get_proxies, get_random_proxy, get_from_api
-from fastapi import FastAPI, Request, BackgroundTasks
-import aiohttp
+from proxy_list import get_proxies, get_random_proxy
+from fastapi import BackgroundTasks
 import asyncio
 from bs4 import BeautifulSoup
 import aiohttp
 from typing import Optional, Dict, Any, Union
 from fastapi import FastAPI
 import configparser
-import logging
-import uvicorn
+
 from fake_useragent import UserAgent
+from fastapi_utils.tasks import repeat_every
 
 config = configparser.ConfigParser()
 config.read('config.ini')
-timestamp, proxy_list = get_proxies()
+
+user_agent = UserAgent()
 
 app = FastAPI()
 
 
-async def update_proxy_list():
-    get_from_api(config.get('PRODUCTION', 'proxy-api-url'))
-    print("Fetching data from API")
-
-
-async def run_update_proxy_list():
-    while True:
-        await asyncio.sleep(300)  # sleep for 5 minutes
-        print('getting new proxies')
-        await update_proxy_list()
-        print('yay, got new proxies')
+def update_proxy_list():
+    timestamp, proxy_list = get_proxies()
+    app.state.proxy_updated = timestamp
+    app.state.proxy_list = proxy_list
+    print('Proxy list updated')
 
 
 @app.on_event("startup")
+@repeat_every(seconds=5 * 60)
 async def startup_event():
-    asyncio.create_task(run_update_proxy_list())
+    background_tasks = BackgroundTasks()
+    background_tasks.add_task(update_proxy_list())
+
 
 @app.post("/scrape")
 async def scrape(to_scrape: dict):
@@ -44,10 +41,13 @@ async def scrape(to_scrape: dict):
         results = await asyncio.gather(*tasks)
         return results
 
-async def scrape_url(session: aiohttp.ClientSession, url: str, proxy: Optional[str], to_scrape: Dict[str, Any]) -> Union[int, Dict[str, Any]]:
+
+async def scrape_url(session: aiohttp.ClientSession, url: str, proxy: Optional[str], to_scrape: Dict[str, Any]) -> \
+        Union[int, Dict[str, Any]]:
     for i in range(3):
         try:
-            async with session.get(url, proxy=proxy) as response:
+            proxy = get_random_proxy(app.state.proxy_list)
+            async with session.get(url, proxy=proxy, headers={'User-Agent': user_agent.random}) as response:
                 print(response.status)
                 if response.status == 200:
                     html = await response.text()
@@ -65,4 +65,4 @@ async def scrape_url(session: aiohttp.ClientSession, url: str, proxy: Optional[s
                 return e
             else:
                 await asyncio.sleep(5)
-                proxy = get_random_proxy()
+                proxy = get_random_proxy(app.state.proxy_list)

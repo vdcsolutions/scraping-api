@@ -2,221 +2,55 @@ DEBUG:root:This is a debug message
 DEBUG:root:This is a debug message
 DEBUG:root:This is a debug message
 DEBUG:root:This is a debug message
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
+DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 251192
+DEBUG:root:This is a debug message
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
+DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 251192
+DEBUG:root:This is a debug message
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
+DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 251192
+DEBUG:root:This is a debug message
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
+DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 251192
+DEBUG:root:This is a debug message
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
+DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 258974
+DEBUG:root:This is a debug message
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
+DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 258974
 DEBUG:root:This is a debug message
 DEBUG:root:This is a debug message
 DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
-DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 264915
+DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 258974
 DEBUG:root:This is a debug message
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
-DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 264072
-DEBUG:root:This is a debug message
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
-DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 264072
-DEBUG:root:This is a debug message
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
-DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 264072
-DEBUG:root:This is a debug message
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
-DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 270582
-DEBUG:root:This is a debug message
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
-DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 270582
-DEBUG:root:This is a debug message
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
-DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 261241
-DEBUG:root:This is a debug message
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
-DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 261241
-DEBUG:root:This is a debug message
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
-DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 253901
 DEBUG:root:This is a debug message
 DEBUG:root:This is a debug message
 DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
-DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 253901
-DEBUG:root:Error fetching URL h: name 'get_random_proxy' is not defined
-DEBUG:root:Error fetching URL t: name 'get_random_proxy' is not defined
-DEBUG:root:Error fetching URL t: name 'get_random_proxy' is not defined
-DEBUG:root:Error fetching URL p: name 'get_random_proxy' is not defined
-DEBUG:root:Error fetching URL :: name 'get_random_proxy' is not defined
-DEBUG:root:Error fetching URL /: name 'get_random_proxy' is not defined
-DEBUG:root:Error fetching URL /: name 'get_random_proxy' is not defined
-DEBUG:root:Error fetching URL g: name 'get_random_proxy' is not defined
-DEBUG:root:Error fetching URL o: name 'get_random_proxy' is not defined
-DEBUG:root:Error fetching URL o: name 'get_random_proxy' is not defined
-DEBUG:root:Error fetching URL g: name 'get_random_proxy' is not defined
-DEBUG:root:Error fetching URL l: name 'get_random_proxy' is not defined
-DEBUG:root:Error fetching URL e: name 'get_random_proxy' is not defined
-DEBUG:root:Error fetching URL .: name 'get_random_proxy' is not defined
-DEBUG:root:Error fetching URL c: name 'get_random_proxy' is not defined
-DEBUG:root:Error fetching URL o: name 'get_random_proxy' is not defined
-DEBUG:root:Error fetching URL m: name 'get_random_proxy' is not defined
+DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 362593
 DEBUG:root:This is a debug message
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
-DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 257430
 DEBUG:root:This is a debug message
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
-DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 257430
+DEBUG:root:This is a debug message
 DEBUG:root:This is a debug message
 DEBUG:root:This is a debug message
 DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
-DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 257430
-DEBUG:root:Error fetching URL target_urls: name 'get_random_proxy' is not defined
-DEBUG:root:This is a debug message
+DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 362593
 DEBUG:root:This is a debug message
 DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
-DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 257430
-DEBUG:root:Error fetching URL target_urls: 'int' object has no attribute 'strip'
+DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 362593
 DEBUG:root:This is a debug message
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
-DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 296400
-DEBUG:root:Error fetching URL target_urls: target_urls
-DEBUG:root:Error fetching URL target_urls: target_urls
-DEBUG:root:Error fetching URL target_urls: target_urls
-DEBUG:root:This is a debug message
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
-DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 296400
-DEBUG:root:Error fetching URL target_urls: target_urls
-DEBUG:root:Error fetching URL target_urls: target_urls
-DEBUG:root:This is a debug message
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
-DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 296400
-DEBUG:root:Error fetching URL target_urls: target_urls
-DEBUG:root:This is a debug message
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
-DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 296400
-DEBUG:root:This is a debug message
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
-DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 296400
-DEBUG:root:Error fetching URL target_urls: target_urls
-DEBUG:root:Error fetching URL target_urls: target_urls
-DEBUG:root:This is a debug message
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
-DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 296400
-DEBUG:root:This is a debug message
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
-DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 251449
-DEBUG:root:This is a debug message
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
-DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 251449
-DEBUG:root:This is a debug message
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
-DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 251449
-DEBUG:root:This is a debug message
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
-DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 251449
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
-DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 251449
-ERROR:asyncio:Task exception was never retrieved
-future: <Task finished coro=<scheduled_data_fetch() done, defined at /home/wodecki/PycharmProjects/async_scraper/main.py:29> exception=TypeError("object list can't be used in 'await' expression")>
-Traceback (most recent call last):
-  File "/home/wodecki/PycharmProjects/async_scraper/main.py", line 31, in scheduled_data_fetch
-    await get_from_api(config.get('PRODUCTION', 'proxy_api_url'))
-TypeError: object list can't be used in 'await' expression
-DEBUG:root:This is a debug message
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
-DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 251449
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
-DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 251449
-ERROR:asyncio:Task exception was never retrieved
-future: <Task finished coro=<scheduled_data_fetch() done, defined at /home/wodecki/PycharmProjects/async_scraper/main.py:29> exception=TypeError("object list can't be used in 'await' expression")>
-Traceback (most recent call last):
-  File "/home/wodecki/PycharmProjects/async_scraper/main.py", line 31, in scheduled_data_fetch
-    await get_from_api(config.get('PRODUCTION', 'proxy_api_url'))
-TypeError: object list can't be used in 'await' expression
-DEBUG:root:This is a debug message
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
-DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 250392
-DEBUG:root:This is a debug message
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
-DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 250392
-ERROR:asyncio:_GatheringFuture exception was never retrieved
-future: <_GatheringFuture finished exception=No option 'proxy-api-url' in section: 'PRODUCTION'>
-Traceback (most recent call last):
-  File "/usr/lib/python3.7/configparser.py", line 788, in get
-    value = d[option]
-  File "/usr/lib/python3.7/collections/__init__.py", line 916, in __getitem__
-    return self.__missing__(key)            # support subclasses that define __missing__
-  File "/usr/lib/python3.7/collections/__init__.py", line 908, in __missing__
-    raise KeyError(key)
-KeyError: 'proxy-api-url'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/wodecki/PycharmProjects/async_scraper/main.py", line 17, in get_from_api
-    get_from_api(config.get('PRODUCTION','proxy-api-url'))
-  File "/usr/lib/python3.7/configparser.py", line 791, in get
-    raise NoOptionError(option, section)
-configparser.NoOptionError: No option 'proxy-api-url' in section: 'PRODUCTION'
-DEBUG:root:This is a debug message
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
-DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 250392
-DEBUG:root:This is a debug message
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
-DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 250392
-ERROR:asyncio:Task exception was never retrieved
-future: <Task finished coro=<run_get_from_api() done, defined at /home/wodecki/PycharmProjects/async_scraper/main.py:22> exception=No option 'proxy-api-url' in section: 'PRODUCTION'>
-Traceback (most recent call last):
-  File "/usr/lib/python3.7/configparser.py", line 788, in get
-    value = d[option]
-  File "/usr/lib/python3.7/collections/__init__.py", line 916, in __getitem__
-    return self.__missing__(key)            # support subclasses that define __missing__
-  File "/usr/lib/python3.7/collections/__init__.py", line 908, in __missing__
-    raise KeyError(key)
-KeyError: 'proxy-api-url'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/wodecki/PycharmProjects/async_scraper/main.py", line 24, in run_get_from_api
-    await get_from_api()
-  File "/home/wodecki/PycharmProjects/async_scraper/main.py", line 18, in get_from_api
-    get_from_api(config.get('PRODUCTION', 'proxy-api-url'))
-  File "/usr/lib/python3.7/configparser.py", line 791, in get
-    raise NoOptionError(option, section)
-configparser.NoOptionError: No option 'proxy-api-url' in section: 'PRODUCTION'
-DEBUG:root:This is a debug message
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
-DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 250392
-DEBUG:root:Error fetching URL http://google.com: 
-DEBUG:root:Error fetching URL https://www.fcbarca.com/109818-poranny-przeglad-prasy-fcbarcacom.html: 502, message='Bad Gateway', url=URL('http://183.221.242.107:8443')
-DEBUG:root:Error fetching URL https://www.fcbarca.com/109818-poranny-przeglad-prasy-fcbarcacom.html: 'utf-8' codec can't decode byte 0xbf in position 62980: invalid start byte
-DEBUG:root:This is a debug message
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
-DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 231841
-ERROR:asyncio:Task exception was never retrieved
-future: <Task finished coro=<run_get_from_api() done, defined at /home/wodecki/PycharmProjects/async_scraper/main.py:22> exception=No option 'proxy-api-url' in section: 'PRODUCTION'>
-Traceback (most recent call last):
-  File "/usr/lib/python3.7/configparser.py", line 788, in get
-    value = d[option]
-  File "/usr/lib/python3.7/collections/__init__.py", line 916, in __getitem__
-    return self.__missing__(key)            # support subclasses that define __missing__
-  File "/usr/lib/python3.7/collections/__init__.py", line 908, in __missing__
-    raise KeyError(key)
-KeyError: 'proxy-api-url'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/wodecki/PycharmProjects/async_scraper/main.py", line 25, in run_get_from_api
-    await get_from_api()
-  File "/home/wodecki/PycharmProjects/async_scraper/main.py", line 18, in get_from_api
-    get_from_api(config.get('PRODUCTION', 'proxy-api-url'))
-  File "/usr/lib/python3.7/configparser.py", line 791, in get
-    raise NoOptionError(option, section)
-configparser.NoOptionError: No option 'proxy-api-url' in section: 'PRODUCTION'
-DEBUG:root:Error fetching URL https://webscraper.io/test-sites/tables: 
-DEBUG:root:This is a debug message
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
-DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 218514
-DEBUG:root:This is a debug message
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
-DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 218514
 DEBUG:root:This is a debug message
 DEBUG:root:This is a debug message
 DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
-DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 218514
+DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 362593
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
+DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 407618
 DEBUG:root:This is a debug message
 DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
-DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 218514
+DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 407618
+DEBUG:root:This is a debug message
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
+DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 362612
+DEBUG:root:This is a debug message
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
+DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 362612
