@@ -1,0 +1,95 @@
+DEBUG:root:This is a debug message
+DEBUG:root:This is a debug message
+DEBUG:root:This is a debug message
+DEBUG:root:This is a debug message
+DEBUG:root:This is a debug message
+DEBUG:root:This is a debug message
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
+DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 264915
+DEBUG:root:This is a debug message
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
+DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 264072
+DEBUG:root:This is a debug message
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
+DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 264072
+DEBUG:root:This is a debug message
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
+DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 264072
+DEBUG:root:This is a debug message
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
+DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 270582
+DEBUG:root:This is a debug message
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
+DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 270582
+DEBUG:root:This is a debug message
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
+DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 261241
+DEBUG:root:This is a debug message
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
+DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 261241
+DEBUG:root:This is a debug message
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
+DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 253901
+DEBUG:root:This is a debug message
+DEBUG:root:This is a debug message
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
+DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 253901
+DEBUG:root:Error fetching URL h: name 'get_random_proxy' is not defined
+DEBUG:root:Error fetching URL t: name 'get_random_proxy' is not defined
+DEBUG:root:Error fetching URL t: name 'get_random_proxy' is not defined
+DEBUG:root:Error fetching URL p: name 'get_random_proxy' is not defined
+DEBUG:root:Error fetching URL :: name 'get_random_proxy' is not defined
+DEBUG:root:Error fetching URL /: name 'get_random_proxy' is not defined
+DEBUG:root:Error fetching URL /: name 'get_random_proxy' is not defined
+DEBUG:root:Error fetching URL g: name 'get_random_proxy' is not defined
+DEBUG:root:Error fetching URL o: name 'get_random_proxy' is not defined
+DEBUG:root:Error fetching URL o: name 'get_random_proxy' is not defined
+DEBUG:root:Error fetching URL g: name 'get_random_proxy' is not defined
+DEBUG:root:Error fetching URL l: name 'get_random_proxy' is not defined
+DEBUG:root:Error fetching URL e: name 'get_random_proxy' is not defined
+DEBUG:root:Error fetching URL .: name 'get_random_proxy' is not defined
+DEBUG:root:Error fetching URL c: name 'get_random_proxy' is not defined
+DEBUG:root:Error fetching URL o: name 'get_random_proxy' is not defined
+DEBUG:root:Error fetching URL m: name 'get_random_proxy' is not defined
+DEBUG:root:This is a debug message
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
+DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 257430
+DEBUG:root:This is a debug message
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
+DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 257430
+DEBUG:root:This is a debug message
+DEBUG:root:This is a debug message
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
+DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 257430
+DEBUG:root:Error fetching URL target_urls: name 'get_random_proxy' is not defined
+DEBUG:root:This is a debug message
+DEBUG:root:This is a debug message
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
+DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 257430
+DEBUG:root:Error fetching URL target_urls: 'int' object has no attribute 'strip'
+DEBUG:root:This is a debug message
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
+DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 296400
+DEBUG:root:Error fetching URL target_urls: target_urls
+DEBUG:root:Error fetching URL target_urls: target_urls
+DEBUG:root:Error fetching URL target_urls: target_urls
+DEBUG:root:This is a debug message
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
+DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 296400
+DEBUG:root:Error fetching URL target_urls: target_urls
+DEBUG:root:Error fetching URL target_urls: target_urls
+DEBUG:root:This is a debug message
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
+DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 296400
+DEBUG:root:Error fetching URL target_urls: target_urls
+DEBUG:root:This is a debug message
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
+DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 296400
+DEBUG:root:This is a debug message
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
+DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 296400
+DEBUG:root:Error fetching URL target_urls: target_urls
+DEBUG:root:Error fetching URL target_urls: target_urls
+DEBUG:root:This is a debug message
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:80
+DEBUG:urllib3.connectionpool:http://localhost:80 "GET /live-proxy-list HTTP/1.1" 200 296400
