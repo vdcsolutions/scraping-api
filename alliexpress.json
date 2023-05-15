@@ -1,0 +1,5 @@
+{"javascript" : "True",
+ "urls": ["https://pl.aliexpress.com/item/1005004845615053.html",
+"https://pl.aliexpress.com/item/1005004795742863.html"],
+        "selectors": [".product-title-text", "#product-description", ".uniform-banner-box-price",".product-specs",".product-dynamic-shipping"],
+        "names": ["produkt", "opis", "cena", "specyfikacja", "dostawa"]}
