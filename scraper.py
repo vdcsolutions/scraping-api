@@ -4,8 +4,10 @@ import aiohttp
 from typing import Optional, Dict, Any, Union, List
 from proxy_list import  get_random_proxy, get_proxies
 from fake_useragent import UserAgent
+
+
 async def scrape_url(session: aiohttp.ClientSession, url: str, proxy: Optional[str], to_scrape: Dict[str, Any]) -> \
-Union[int, Dict[str, Any]]:
+        Union[int, Dict[str, Any]]:
     """
     Scrape the given URL using the specified selector (CSS or XPath) and return the scraped data.
 
@@ -29,16 +31,14 @@ Union[int, Dict[str, Any]]:
                     soup = BeautifulSoup(html, 'html.parser')
                     data = {}
 
-                    if 'selector' in to_scrape:
-                        selector = to_scrape['selector']
-                        if selector == 'css':
-                            data = scrape_css(soup, to_scrape['selectors'], to_scrape['names'])
-                        elif selector == 'xpath':
-                            data = scrape_xpath(html, to_scrape['selectors'], to_scrape['names'])
+                    if 'payload' in to_scrape:
+                        payload = to_scrape['payload']
+                        if isinstance(payload, list):
+                            data = scrape_data(soup, payload)
                         else:
-                            raise ValueError("Invalid selector value. Must be either 'css' or 'xpath'.")
+                            raise ValueError("Invalid payload format. Must be a list of payload objects.")
                     else:
-                        raise ValueError("Selector value not provided in 'to_scrape'.")
+                        raise ValueError("Payload not provided in 'to_scrape'.")
 
                     to_scrape['result'] = data
                     return to_scrape
@@ -51,6 +51,34 @@ Union[int, Dict[str, Any]]:
             else:
                 await asyncio.sleep(5)
                 proxy = get_random_proxy(proxy_list)
+
+
+def scrape_data(soup: BeautifulSoup, payload: List[Dict[str, Any]]) -> Dict[str, Any]:
+    """
+    Scrape the data from the BeautifulSoup object using CSS or XPath selectors.
+
+    Args:
+        soup (BeautifulSoup): The BeautifulSoup object representing the HTML content.
+        payload (List[Dict[str, Any]]): The list of payload objects containing the selector type (css or xpath),
+            the selector value, and the name.
+
+    Returns:
+        Dict[str, Any]: The scraped data.
+    """
+    data = {}
+    for item in payload:
+        selector_type = item.get('type')
+        selector_value = item.get('selector')
+        name = item.get('name')
+
+        if selector_type == 'css':
+            data[name] = [element.text for element in soup.select(selector_value)]
+        elif selector_type == 'xpath':
+            elements = soup.select(selector_value)
+            data[name] = [element.text.strip() for element in elements]
+        else:
+            raise ValueError("Invalid selector type. Must be either 'css' or 'xpath'.")
+    return data
 
 def scrape_css(soup: BeautifulSoup, selectors: List[str], names: List[str]) -> Dict[str, Any]:
     """
