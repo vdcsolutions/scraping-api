@@ -20,7 +20,6 @@ from scraper import scrape_url
 config = configparser.ConfigParser()
 config.read('config.ini')
 
-
 # Get the list of proxies
 timestamp, proxy_list = get_proxies()
 
@@ -35,6 +34,13 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
+@app.get("/")
+async def root():
+    return {"message": "Welcome to scraping-district dawg"}
+
+
 @app.post("/fetch")
 async def fetch_urls(request: Request) -> List[Dict[str, str]]:
     """
@@ -70,7 +76,6 @@ if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
 
 
-
 async def update_proxy_list():
     get_from_api(config.get('PRODUCTION', 'proxy-api-url'))
     print("Fetching data from API")
@@ -87,6 +92,7 @@ async def run_update_proxy_list():
 @app.on_event("startup")
 async def startup_event():
     asyncio.create_task(run_update_proxy_list())
+
 
 @app.post("/scrape")
 async def scrape(to_scrape: dict):
