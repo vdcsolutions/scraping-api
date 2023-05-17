@@ -56,7 +56,7 @@ async def fetch_urls(request: Request) -> List[Dict[str, str]]:
     responses = []
 
     async with aiohttp.ClientSession() as session:
-        for url in target_urls['target_urls']:
+        for url in target_urls['urls']:
             try:
                 # Get a random proxy from the proxy list
                 proxy = get_random_proxy(proxy_list)
