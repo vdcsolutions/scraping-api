@@ -41,6 +41,7 @@ async def root():
     return {"message": "Welcome to scraping-district dawg"}
 
 
+'''
 @app.post("/fetch")
 async def fetch_urls(request: Request) -> List[Dict[str, str]]:
     """
@@ -70,7 +71,7 @@ async def fetch_urls(request: Request) -> List[Dict[str, str]]:
                 responses.append({'url': url, 'response': f"Error fetching URL {url}: {e}"})
 
     return responses
-
+'''
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
