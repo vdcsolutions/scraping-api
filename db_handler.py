@@ -8,30 +8,43 @@ class DBHandler:
         config.read(config_file)
 
         # Get the MongoDB connection details from the specified section
-        mongodb_url = config.get("MONGODB", "url")
-        mongodb_username = config.get("MONGODB", "username")
-        mongodb_password = config.get("MONGODB", "password")
-        mongodb_database = config.get("MONGODB", "database")
-        mongodb_collection = config.get("MONGODB", "collection")
+        mongodb_url = config.get(section, "url")
+        mongodb_username = config.get(section, "username")
+        mongodb_password = config.get(section, "password")
+        mongodb_database = config.get(section, "database")
+        mongodb_collection = config.get(section, "collection")
 
         # Construct the connection string
         connection_string = f"mongodb://{mongodb_username}:{mongodb_password}@{mongodb_url}/{mongodb_database}"
-
+        print(connection_string)
         # Create a MongoDB client
-        self.client = MongoClient(connection_string)
+        try:
+            # Create a MongoDB client
+            self.client = MongoClient(connection_string)
+
+            # Access the specified database and collection
+            self.db = self.client[mongodb_database]
+            self.collection = self.db[mongodb_collection]
+        except Exception as e:
+            print(f"Failed to connect to MongoDB: {str(e)}")
+
 
         # Access the specified database and collection
         self.db = self.client[mongodb_database]
         self.collection = self.db[mongodb_collection]
+
     @staticmethod
-    def flatten_dict(data, parent_key='', sep='.'):
+    @staticmethod
+    def flatten_dict(data):
         flattened = {}
-        for k, v in data.items():
-            new_key = f"{parent_key}{sep}{k}" if parent_key else k
-            if isinstance(v, dict):
-                flattened.update(DBHandler.flatten_dict(v, new_key, sep=sep))
-            else:
-                flattened[new_key] = v
+        for key, value in data.items():
+            if key == 'urls':
+                flattened[key] = value
+            elif key == 'payload':
+                for i, payload_dict in enumerate(value, start=1):
+                    for inner_key, inner_value in payload_dict.items():
+                        flattened[f"payload_{inner_key}{i}"] = inner_value
+        print(flattened)
         return flattened
 
     @staticmethod

@@ -3,5 +3,5 @@
         "names": ["first_names", "last_names", "usernames"]}
 
 {"urls": ["https://webscraper.io/test-sites/tables"],
-        "selectors": [{"xpath":"tbody td:nth-of-type(2)"}, {"xpath":"tbody td:nth-of-type(3)"}],
+        "": [{"xpath":"tbody td:nth-of-type(2)"}, {"xpath":"tbody td:nth-of-type(3)"}],
         "names": ["first_names", "last_names", "usernames"]}

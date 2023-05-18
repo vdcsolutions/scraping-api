@@ -102,13 +102,13 @@ async def scrape(to_scrape: dict):
     async with aiohttp.ClientSession(trust_env=True) as session:
         for url in to_scrape['urls']:
             tasks.append(asyncio.ensure_future(scrape_url(session, url, None, to_scrape)))
-        results = await asyncio.gather(*tasks)
 
-        # Create an instance of DBHandler
-        db_handler = DBHandler("config.ini", "PRODUCTION")
+    # Create an instance of DBHandler
+    db_handler = DBHandler("config.ini", "MONGODB")
 
-        # Insert the data into MongoDB
-        flattened_data = DBHandler.flatten_dict(to_scrape)
-        db_handler.insert_data(flattened_data)
+    # Insert the data into MongoDB
 
-        return results
+    # flattened_data = DBHandler.flatten_dict(to_scrape)
+    db_handler.insert_data(to_scrape)
+
+    return to_scrape
