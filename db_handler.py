@@ -47,5 +47,5 @@ class DBHandler:
         return expanded
 
     def insert_data(self, data):
-        result = self.collection.insert_one(flatten(data))
+        result = self.collection.insert_one(self.flatten_dict(data))
         return str(result.inserted_id)

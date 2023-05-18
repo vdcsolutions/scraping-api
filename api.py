@@ -16,6 +16,7 @@ from proxy_list import get_proxies, get_random_proxy
 import uvicorn
 from fake_useragent import UserAgent
 from scraper import scrape_url
+from db_handler import DBHandler
 
 config = configparser.ConfigParser()
 config.read('config.ini')
@@ -102,4 +103,12 @@ async def scrape(to_scrape: dict):
         for url in to_scrape['urls']:
             tasks.append(asyncio.ensure_future(scrape_url(session, url, None, to_scrape)))
         results = await asyncio.gather(*tasks)
+
+        # Create an instance of DBHandler
+        db_handler = DBHandler("config.ini", "PRODUCTION")
+
+        # Insert the data into MongoDB
+        flattened_data = DBHandler.flatten_dict(to_scrape)
+        db_handler.insert_data(flattened_data)
+
         return results
