@@ -6,3 +6,4 @@ httpx==0.24.0
 pytest
 Requests==2.30.0
 uvicorn==0.22.0
+pymongo
