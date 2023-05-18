@@ -34,7 +34,6 @@ class DBHandler:
         self.collection = self.db[mongodb_collection]
 
     @staticmethod
-    @staticmethod
     def flatten_dict(data):
         flattened = {}
         for key, value in data.items():
