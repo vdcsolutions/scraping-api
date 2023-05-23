@@ -1,0 +1,36 @@
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 143.42.27.95:80
+DEBUG:urllib3.connectionpool:http://143.42.27.95:80 "GET /live-proxy-list HTTP/1.1" 200 609194
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 143.42.27.95:80
+DEBUG:urllib3.connectionpool:http://143.42.27.95:80 "GET /live-proxy-list HTTP/1.1" 200 587997
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 143.42.27.95:80
+DEBUG:urllib3.connectionpool:http://143.42.27.95:80 "GET /live-proxy-list HTTP/1.1" 200 580345
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 143.42.27.95:80
+DEBUG:urllib3.connectionpool:http://143.42.27.95:80 "GET /live-proxy-list HTTP/1.1" 200 580345
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 143.42.27.95:80
+DEBUG:urllib3.connectionpool:http://143.42.27.95:80 "GET /live-proxy-list HTTP/1.1" 200 580345
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 143.42.27.95:80
+DEBUG:urllib3.connectionpool:http://143.42.27.95:80 "GET /live-proxy-list HTTP/1.1" 200 593107
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 143.42.27.95:80
+DEBUG:urllib3.connectionpool:http://143.42.27.95:80 "GET /live-proxy-list HTTP/1.1" 200 593107
+DEBUG:root:Error fetching URL https://webscraper.io/test-sites/tables: 
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-3' coro=<run_update_proxy_list() done, defined at /home/wodecki/Desktop/web-scraper/scraping-api/api.py:82> exception=No option 'proxy-api-url' in section: 'PRODUCTION'>
+Traceback (most recent call last):
+  File "/home/wodecki/anaconda3/lib/python3.10/configparser.py", line 790, in get
+    value = d[option]
+  File "/home/wodecki/anaconda3/lib/python3.10/collections/__init__.py", line 986, in __getitem__
+    return self.__missing__(key)            # support subclasses that define __missing__
+  File "/home/wodecki/anaconda3/lib/python3.10/collections/__init__.py", line 978, in __missing__
+    raise KeyError(key)
+KeyError: 'proxy-api-url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wodecki/Desktop/web-scraper/scraping-api/api.py", line 86, in run_update_proxy_list
+    await update_proxy_list()
+  File "/home/wodecki/Desktop/web-scraper/scraping-api/api.py", line 78, in update_proxy_list
+    get_from_api(config.get('PRODUCTION', 'proxy-api-url'))
+  File "/home/wodecki/anaconda3/lib/python3.10/configparser.py", line 793, in get
+    raise NoOptionError(option, section)
+configparser.NoOptionError: No option 'proxy-api-url' in section: 'PRODUCTION'
